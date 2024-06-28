@@ -1,0 +1,104 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background:rgb(57, 152, 193) ;
+    display: flex;
+    font-family: 'Dosis',sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+.wrapper{
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: black;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    flex-basis: 400px;
+    height: 500px;
+    padding: 20px 35px;
+}
+.screen{
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: black;
+    font-size: 35px;
+    overflow: auto;
+    padding:20px;
+    text-align: right;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.button,.equal,.clear{
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: black;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 60px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:last-child,.equal{
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    background: rgba(3, 40, 132, 0.675);
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:last-child:hover,.equal:hover{
+    background: rgba(3, 40, 132, 0.368);
+    color: black;
+}
+.button:hover{
+    background:rgba(255, 255, 255, 0.248);
+}
+.button:active{
+    background: rgba(255, 255, 255, 0.126);
+    transform: translateY(2px) scale(0.95);
+}
+.double{
+    flex-basis: 47%;
+}
+.equal{
+    flex-basis: 73%;
+}
+.clear{background: rgb(255, 196, 86);}
+.button:last-child:active,.equal:active{
+    background: rgba(3, 40, 132, 0.189);
+}
+
+.clear:hover{
+    background: rgba(255, 196, 86, 0.773);
+
+}
+.clear:active{
+    background: rgba(255, 196, 86, 0.388);
+    transform: translateY(2px) scale(0.95);
+}
+.equal:hover{
+    transform: scale(1.06);}
+.equal:active{
+    transform: scale(1.1);
+}
